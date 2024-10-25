@@ -1,0 +1,12 @@
+<section>
+    @for (article of articles; track article.title) {
+        <article>
+            <p>title: {{article.title}}</p>
+            <p>body: {{article.body}}</p>
+            <p>author: {{article.author}}</p>
+            <hr>
+        </article>
+    } @empty {
+        <p>There are no articles</p>
+    }
+</section>
